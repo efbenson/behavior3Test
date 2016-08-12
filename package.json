@@ -1,0 +1,15 @@
+{
+  "name": "aitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "efbenson@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "behavior3js": "^0.1.0",
+    "quest-behavior3": "^0.1.1"
+  }
+}
