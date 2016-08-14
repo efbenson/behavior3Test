@@ -1,184 +1,207 @@
 {
-  "id": "6c2ec6e1-b3ae-4764-a9d8-45bb86bf1aab",
-  "title": "Door Tree",
-  "description": "",
-  "root": "4976592d-0fe9-4088-8d8e-67a2c0ba98de",
-  "properties": {},
-  "nodes": {
-    "d14c7d44-66c8-4d21-83e1-e2041a0cfe73": {
-      "id": "d14c7d44-66c8-4d21-83e1-e2041a0cfe73",
-      "name": "Sequence",
-      "title": "Sequence",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -600,
-        "y": -252
-      },
-      "children": [
-        "7d493574-613c-4703-8946-82f694c5780e",
-        "6e0ae324-d48d-4084-89f7-54f89061d82d"
-      ]
+    "title": "A Behavior Tree",
+    "description": "",
+    "root": "4976592d-0fe9-4088-8d8e-67a2c0ba98de",
+    "display": {
+        "camera_x": 1280,
+        "camera_y": 647.5,
+        "camera_z": 1,
+        "x": 0,
+        "y": 0
     },
-    "4976592d-0fe9-4088-8d8e-67a2c0ba98de": {
-      "id": "4976592d-0fe9-4088-8d8e-67a2c0ba98de",
-      "name": "Sequence",
-      "title": "Sequence",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -876,
-        "y": -384
-      },
-      "children": [
-        "fb0f5694-af5f-46a9-82c0-22b9fb85e2b3",
-        "5fa8758b-06eb-429a-8c00-a92ec2c54934",
-        "d799cbce-9e9e-4156-845e-4130a994217f",
-        "48dcae93-0cd3-428b-8dea-7cc48a19f91e"
-      ]
+    "properties": {},
+    "nodes": {
+        "d14c7d44-66c8-4d21-83e1-e2041a0cfe73": {
+            "id": "d14c7d44-66c8-4d21-83e1-e2041a0cfe73",
+            "name": "Sequence",
+            "title": "Sequence",
+            "description": "",
+            "display": {
+                "x": -600,
+                "y": -252
+            },
+            "properties": {},
+            "children": [
+                "7d493574-613c-4703-8946-82f694c5780e",
+                "6e0ae324-d48d-4084-89f7-54f89061d82d"
+            ]
+        },
+        "4976592d-0fe9-4088-8d8e-67a2c0ba98de": {
+            "id": "4976592d-0fe9-4088-8d8e-67a2c0ba98de",
+            "name": "Sequence",
+            "title": "Sequence",
+            "description": "",
+            "display": {
+                "x": -876,
+                "y": -384
+            },
+            "properties": {},
+            "children": [
+                "fb0f5694-af5f-46a9-82c0-22b9fb85e2b3",
+                "5fa8758b-06eb-429a-8c00-a92ec2c54934",
+                "d799cbce-9e9e-4156-845e-4130a994217f",
+                "48dcae93-0cd3-428b-8dea-7cc48a19f91e"
+            ]
+        },
+        "5fa8758b-06eb-429a-8c00-a92ec2c54934": {
+            "id": "5fa8758b-06eb-429a-8c00-a92ec2c54934",
+            "name": "Priority",
+            "title": "Priority",
+            "description": "",
+            "display": {
+                "x": -756,
+                "y": -276
+            },
+            "properties": {},
+            "children": [
+                "77f35615-10c2-433d-b2d2-b7976c3bbdb6",
+                "d14c7d44-66c8-4d21-83e1-e2041a0cfe73",
+                "0c0acf46-97e7-477c-bed2-54912f01194e"
+            ]
+        },
+        "fb0f5694-af5f-46a9-82c0-22b9fb85e2b3": {
+            "id": "fb0f5694-af5f-46a9-82c0-22b9fb85e2b3",
+            "name": "walkToDoor",
+            "title": "walkToDoor",
+            "description": "",
+            "display": {
+                "x": -592,
+                "y": -512
+            },
+            "parameters": {},
+            "properties": {}
+        },
+        "b555ede2-1600-4cdc-9df4-111454e26dac": {
+            "id": "b555ede2-1600-4cdc-9df4-111454e26dac",
+            "name": "openDoor",
+            "title": "openDoor",
+            "description": "",
+            "display": {
+                "x": -448,
+                "y": -304
+            },
+            "parameters": {},
+            "properties": {}
+        },
+        "6e0ae324-d48d-4084-89f7-54f89061d82d": {
+            "id": "6e0ae324-d48d-4084-89f7-54f89061d82d",
+            "name": "openDoor",
+            "title": "openDoor",
+            "description": "",
+            "display": {
+                "x": -444,
+                "y": -168
+            },
+            "properties": {}
+        },
+        "0c0acf46-97e7-477c-bed2-54912f01194e": {
+            "id": "0c0acf46-97e7-477c-bed2-54912f01194e",
+            "name": "smashDoor",
+            "title": "smashDoor",
+            "description": "",
+            "display": {
+                "x": -444,
+                "y": -96
+            },
+            "properties": {}
+        },
+        "d799cbce-9e9e-4156-845e-4130a994217f": {
+            "id": "d799cbce-9e9e-4156-845e-4130a994217f",
+            "name": "walkThroughDoor",
+            "title": "walkThroughDoor",
+            "description": "",
+            "display": {
+                "x": -684,
+                "y": -24
+            },
+            "properties": {}
+        },
+        "48dcae93-0cd3-428b-8dea-7cc48a19f91e": {
+            "id": "48dcae93-0cd3-428b-8dea-7cc48a19f91e",
+            "name": "closeDoor",
+            "title": "closeDoor",
+            "description": "",
+            "display": {
+                "x": -696,
+                "y": 60
+            },
+            "properties": {}
+        },
+        "7d493574-613c-4703-8946-82f694c5780e": {
+            "id": "7d493574-613c-4703-8946-82f694c5780e",
+            "name": "canIunlockTheDoor",
+            "title": "canIunlockTheDoor",
+            "description": "",
+            "display": {
+                "x": -432,
+                "y": -240
+            },
+            "properties": {}
+        },
+        "77f35615-10c2-433d-b2d2-b7976c3bbdb6": {
+            "id": "77f35615-10c2-433d-b2d2-b7976c3bbdb6",
+            "name": "Sequence",
+            "title": "Sequence",
+            "description": "",
+            "display": {
+                "x": -592,
+                "y": -352
+            },
+            "parameters": {},
+            "properties": {},
+            "children": [
+                "ae8c258c-ee24-4741-8914-b3e3b4ff4eca",
+                "b555ede2-1600-4cdc-9df4-111454e26dac"
+            ]
+        },
+        "ae8c258c-ee24-4741-8914-b3e3b4ff4eca": {
+            "id": "ae8c258c-ee24-4741-8914-b3e3b4ff4eca",
+            "name": "IsDoorUnlocked",
+            "title": "IsDoorUnlocked",
+            "description": "",
+            "display": {
+                "x": -448,
+                "y": -368
+            },
+            "parameters": {},
+            "properties": {}
+        }
     },
-    "5fa8758b-06eb-429a-8c00-a92ec2c54934": {
-      "id": "5fa8758b-06eb-429a-8c00-a92ec2c54934",
-      "name": "Priority",
-      "title": "Priority",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -756,
-        "y": -276
-      },
-      "children": [
-        "b555ede2-1600-4cdc-9df4-111454e26dac",
-        "d14c7d44-66c8-4d21-83e1-e2041a0cfe73",
-        "0c0acf46-97e7-477c-bed2-54912f01194e"
-      ]
-    },
-    "fb0f5694-af5f-46a9-82c0-22b9fb85e2b3": {
-      "id": "fb0f5694-af5f-46a9-82c0-22b9fb85e2b3",
-      "name": "walkToDoor",
-      "title": "walkToDoor",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -588,
-        "y": -384
-      }
-    },
-    "b555ede2-1600-4cdc-9df4-111454e26dac": {
-      "id": "b555ede2-1600-4cdc-9df4-111454e26dac",
-      "name": "openDoor",
-      "title": "openDoor",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -576,
-        "y": -312
-      }
-    },
-    "6e0ae324-d48d-4084-89f7-54f89061d82d": {
-      "id": "6e0ae324-d48d-4084-89f7-54f89061d82d",
-      "name": "openDoor",
-      "title": "openDoor",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -444,
-        "y": -168
-      }
-    },
-    "0c0acf46-97e7-477c-bed2-54912f01194e": {
-      "id": "0c0acf46-97e7-477c-bed2-54912f01194e",
-      "name": "smashDoor",
-      "title": "smashDoor",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -444,
-        "y": -96
-      }
-    },
-    "d799cbce-9e9e-4156-845e-4130a994217f": {
-      "id": "d799cbce-9e9e-4156-845e-4130a994217f",
-      "name": "walkThroughDoor",
-      "title": "walkThroughDoor",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -684,
-        "y": -24
-      }
-    },
-    "48dcae93-0cd3-428b-8dea-7cc48a19f91e": {
-      "id": "48dcae93-0cd3-428b-8dea-7cc48a19f91e",
-      "name": "closeDoor",
-      "title": "closeDoor",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -696,
-        "y": 60
-      }
-    },
-    "7d493574-613c-4703-8946-82f694c5780e": {
-      "id": "7d493574-613c-4703-8946-82f694c5780e",
-      "name": "canIunlockTheDoor",
-      "title": "canIunlockTheDoor",
-      "description": "",
-      "properties": {},
-      "display": {
-        "x": -432,
-        "y": -240
-      }
-    }
-  },
-  "display": {
-    "camera_x": 1280,
-    "camera_y": 647.5,
-    "camera_z": 1,
-    "x": -936,
-    "y": -528
-  },
-  "custom_nodes": [
-    {
-      "name": "walkToDoor",
-      "category": "action",
-      "title": "walkToDoor",
-      "description": null,
-      "properties": {}
-    },
-    {
-      "name": "openDoor",
-      "category": "action",
-      "title": "openDoor",
-      "description": null,
-      "properties": {}
-    },
-    {
-      "name": "smashDoor",
-      "category": "action",
-      "title": "smashDoor",
-      "description": null,
-      "properties": {}
-    },
-    {
-      "name": "walkThroughDoor",
-      "category": "action",
-      "title": "walkThroughDoor",
-      "description": null,
-      "properties": {}
-    },
-    {
-      "name": "closeDoor",
-      "category": "action",
-      "title": "closeDoor",
-      "description": null,
-      "properties": {}
-    },
-    {
-      "name": "canIunlockTheDoor",
-      "category": "condition",
-      "title": "canIunlockTheDoor",
-      "properties": {}
-    }
-  ]
+    "custom_nodes": [
+        {
+            "name": "walkToDoor",
+            "title": "walkToDoor",
+            "category": "action"
+        },
+        {
+            "name": "openDoor",
+            "title": "openDoor",
+            "category": "action"
+        },
+        {
+            "name": "smashDoor",
+            "title": "smashDoor",
+            "category": "action"
+        },
+        {
+            "name": "walkThroughDoor",
+            "title": "walkThroughDoor",
+            "category": "action"
+        },
+        {
+            "name": "closeDoor",
+            "title": "closeDoor",
+            "category": "action"
+        },
+        {
+            "name": "canIunlockTheDoor",
+            "title": "canIunlockTheDoor",
+            "category": "condition"
+        },
+        {
+            "name": "IsDoorUnlocked",
+            "title": "IsDoorUnlocked",
+            "category": "condition"
+        }
+    ]
 }

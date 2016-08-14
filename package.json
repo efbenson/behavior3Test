@@ -1,15 +1,23 @@
 {
-  "name": "aitest",
+  "name": "behavior3test",
   "version": "1.0.0",
-  "description": "",
+  "description": "sample project implementing behavior3js",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/efbenson/behavior3Test.git"
+  },
+  "keywords": [
+    "behavior",
+    "tree",
+    "behavior tree",
+    "behavior3",
+    "b3"
+  ],
   "author": "efbenson@gmail.com",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "behavior3js": "^0.1.0",
-    "quest-behavior3": "^0.1.1"
   }
 }
